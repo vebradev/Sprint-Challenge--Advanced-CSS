@@ -8,6 +8,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  margin: 0;
 }
 h1,
 h2,
@@ -16,6 +17,10 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+  margin: 1rem 0;
 }
 h2 {
   font-size: 3.2rem;
@@ -31,6 +36,29 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 1rem 0;
+}
+nav .logo {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #22283B;
+  font-size: 1.6rem;
+  padding: 0 15px;
 }
 footer {
   color: #22283B;
