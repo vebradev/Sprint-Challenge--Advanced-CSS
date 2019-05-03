@@ -49,12 +49,15 @@ p {
   margin: 0 auto;
 }
 nav {
+  position: fixed;
+  padding: 1rem 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f4f4f4;
-  padding: 1rem 0;
+  background-color: rgba(244, 244, 244, 0.9);
+  border-bottom: 1px solid #e7e7e7;
 }
 nav .logo {
   text-decoration: none;
@@ -86,6 +89,7 @@ footer p {
 }
 .home .intro img {
   width: 100%;
+  margin: 110px 0 0 0;
 }
 .home .intro h2 {
   padding: 15px 15px 0;
