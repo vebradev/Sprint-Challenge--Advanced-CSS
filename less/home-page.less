@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
   .intro {
+    img {
+      width: 100%;
+    }
 
     h2 {
       padding: 15px 15px 0;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -24,6 +25,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      .flex-center();
+      padding: 15px;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .sky,
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -58,7 +75,7 @@
       }
 
       .btn a {
-        .background(#23293B);
+        .background(#23293b);
         .border(1px, solid, #000);
         .round(5px);
         .padding(8px; 15px);
@@ -68,8 +85,15 @@
         transition: 0.5s ease-in-out;
 
         &:hover {
-          background-color: darken(#23293B, 30%);
+          background-color: darken(#23293b, 30%);
           transition: 0.5s ease-in-out;
+        }
+
+        @media @phone {
+          display: inline-block !important;
+          .padding(20px; 20px;);
+          text-align: center;
+          width: 100%;
         }
       }
     }
@@ -77,12 +101,29 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+
+    @media @phone {
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 20px 15px;
+
+      .walk-text {
+        order: 2;
+        width: 100%;
+        margin: 15px 0 0 0;
+      }
+      .walk-img {
+        width: 100%;
+        margin: 0;
+
+      }
+    }
   }
-}// home
+} // home
