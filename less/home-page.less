@@ -5,6 +5,7 @@
     img {
       width: 100%;
       margin: 110px 0 0 0;
+      border-radius: 5px;
     }
 
     h2 {
@@ -59,7 +60,7 @@
 
   .walk {
     margin-top: 50px;
-    border-top: 1px solid @main-border-color;
+    border-top: 1px solid @border-real;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -76,22 +77,23 @@
       }
 
       .btn a {
-        .background(#23293b);
-        .border(1px, solid, #000);
+        .background(@dark-grey);
+        .border(1px, solid, darken(@dark-grey, 10%));
         .round(5px);
         .padding(8px; 15px);
-        color: #fff;
+        color: @white;
         text-decoration: none;
         font-size: 1.7rem;
         transition: 0.5s ease-in-out;
 
         &:hover {
-          background-color: darken(#23293b, 30%);
+          background-color: darken(@dark-grey, 30%);
           transition: 0.5s ease-in-out;
+          color: @hover-color;
         }
 
         @media @phone {
-          display: inline-block !important;
+          display: inline-block;
           .padding(20px; 20px;);
           text-align: center;
           width: 100%;
@@ -123,7 +125,6 @@
       .walk-img {
         width: 100%;
         margin: 0;
-
       }
     }
   }

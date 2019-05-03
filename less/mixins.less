@@ -1,31 +1,31 @@
 // Mixins Here
 
 .rounded-gray {
-    background: #f4f4f4;
-    padding: 20px 0;
-    border: 1px double #e0e0e0;
-    border-radius: 10px;
+  background: @background;
+  padding: 20px 0;
+  border: 1px double darken(@background, 5%);
+  border-radius: 10px;
 }
 
 .flex-center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .background(@color) {
-    background-color: @color;
+  background-color: @color;
 }
 .border(@width, @style, @color) {
-    border: @width @style @color;
+  border: @width @style @color;
 }
 .round(@radius) {
-    border-radius: @radius;
-    -moz-border-radius: @radius;
-    -webkit-border-radius: @radius;
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
 }
 .padding(@vertical; @horizontal) {
-    padding-top: @vertical;
-    padding-right: @horizontal;
-    padding-bottom: @vertical;
-    padding-left: @horizontal;
+  padding-top: @vertical;
+  padding-right: @horizontal;
+  padding-bottom: @vertical;
+  padding-left: @horizontal;
 }

@@ -7,8 +7,8 @@ nav {
   display: flex;
   .flex-center();
   flex-direction: column;
-  background-color: rgba(244, 244, 244, 0.9);
-  border-bottom: 1px solid darken(#f4f4f4, 5%);
+  background-color: @background-op;
+  border-bottom: 1px solid darken(@background, 5%);
 
   .logo {
     text-decoration: none;
@@ -20,12 +20,10 @@ nav {
     list-style-type: none;
     li {
       a {
-          text-decoration: none;
-          color: #22283B;
-          font-size: 1.6rem;
-          padding: 0 15px;
-        &:hover {
-        }
+        text-decoration: none;
+        color: @dark-grey;
+        font-size: 1.6rem;
+        padding: 0 15px;
       }
     }
   }
