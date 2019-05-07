@@ -1,0 +1,208 @@
+.rounded-gray {
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e7e7e7;
+  border-radius: 10px;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6164;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  color: #23293B;
+}
+h1 {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+h2 {
+  font-size: 3.2rem;
+  margin: 0;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav {
+  position: fixed;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(244, 244, 244, 0.9);
+  border-bottom: 1px solid #e7e7e7;
+}
+nav .logo {
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #23293b;
+  font-size: 1.6rem;
+  padding: 0 15px;
+}
+footer {
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e7e7e7;
+  border-radius: 10px;
+  color: #23293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+}
+.home .intro img {
+  width: 100%;
+  margin: 110px 0 0 0;
+  border-radius: 5px;
+}
+.home .intro h2 {
+  padding: 15px 15px 0;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .space-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .space-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .home .space-images img {
+    width: 100%;
+    margin: 0;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
+.home .visit-planets {
+  padding: 15px;
+}
+.home .visit-planets h3 {
+  margin-top: 11px;
+}
+.home .visit-planets p {
+  margin-top: 13px;
+}
+.home .walk {
+  margin-top: 50px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.home .walk .walk-text {
+  width: 50%;
+}
+.home .walk .walk-text h3 {
+  margin: 0;
+}
+.home .walk .walk-text p {
+  margin-bottom: 26px;
+}
+.home .walk .walk-text .btn a {
+  background-color: #23293b;
+  border: 1px solid #10131b;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: 0.5s ease-in-out;
+}
+.home .walk .walk-text .btn a:hover {
+  background-color: #000000;
+  transition: 0.5s ease-in-out;
+  color: gold;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn a {
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.home .walk .walk-img {
+  width: 46%;
+  margin-left: 4%;
+}
+.home .walk .walk-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px 15px;
+  }
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 0;
+  }
+}

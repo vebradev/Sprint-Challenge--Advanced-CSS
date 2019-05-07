@@ -1,17 +1,20 @@
 // Home Content
 
 .home {
-
   .intro {
+    img {
+      width: 100%;
+      margin: 110px 0 0 0;
+      border-radius: 5px;
+    }
 
     h2 {
-      padding: 15px;
+      padding: 15px 15px 0;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -24,6 +27,22 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      flex-direction: column;
+      .flex-center();
+      padding: 15px;
+
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .sky,
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -40,8 +59,8 @@
   }
 
   .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    margin-top: 50px;
+    border-top: 1px solid @border-real;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -50,26 +69,63 @@
       width: 50%;
 
       h3 {
-        margin-bottom: 10px;
+        margin: 0;
       }
 
       p {
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn a {
+        .background(@dark-grey);
+        .border(1px, solid, darken(@dark-grey, 10%));
+        .round(5px);
+        .padding(8px; 15px);
+        color: @white;
+        text-decoration: none;
+        font-size: 1.7rem;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background-color: darken(@dark-grey, 30%);
+          transition: 0.5s ease-in-out;
+          color: @hover-color;
+        }
+
+        @media @phone {
+          display: inline-block;
+          .padding(20px; 20px;);
+          text-align: center;
+          width: 100%;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
       }
     }
+
+    @media @phone {
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 20px 15px;
+
+      .walk-text {
+        order: 2;
+        width: 100%;
+        margin: 15px 0 0 0;
+      }
+      .walk-img {
+        width: 100%;
+        margin: 0;
+      }
+    }
   }
-}// home
+} // home

@@ -1,1 +1,30 @@
 // Navigation code here
+
+nav {
+  position: fixed;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  .flex-center();
+  flex-direction: column;
+  background-color: @background-op;
+  border-bottom: 1px solid darken(@background, 5%);
+
+  .logo {
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    li {
+      a {
+        text-decoration: none;
+        color: @dark-grey;
+        font-size: 1.6rem;
+        padding: 0 15px;
+      }
+    }
+  }
+}
